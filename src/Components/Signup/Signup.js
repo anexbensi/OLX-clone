@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 
 import Logo from "../../olx-logo.png";
-import { FirebaseContext } from "../../store/firebaseContext";
+import { FirebaseContext } from "../../store/Context";
 import "./Signup.css";
 import { useHistory } from "react-router-dom";
 
@@ -90,7 +90,7 @@ export default function Signup() {
               <br />
               <button>Signup</button>
             </form>
-            <a>Login</a>
+            <a onClick={()=>history.push('/login')}>Login</a>
           </center>
         </div>
       </div>
